@@ -1,13 +1,13 @@
 let arrayNumber = [55, 40, 25, 100]
 
 
-function compareNombres(a, b) {
-    return b - a ;
+function compareNumbers(a, b) { //Permet de comparer deux nombres
+    return b - a ; 
   }
 
 function sort(arrayString)
 {
-    arrayNumber.sort(compareNombres);
+    arrayNumber.sort(compareNumbers); //tri en utilisant la fonction compareNombres
     return arrayNumber
 
 }
