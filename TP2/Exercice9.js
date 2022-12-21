@@ -1,3 +1,9 @@
-const querystring = require("querystring")
+const querystring = require("querystring") ;
+const url = require ("url");
 
-console.log(querystring.parse("https://www.google.com/",))
+
+const link = "https://github.com/UsakiDJ/NodeJsCoursDridiJessim/search?l=javascript"
+
+let pom = querystring.parse(url.parse(link).query);
+
+console.log(pom);
